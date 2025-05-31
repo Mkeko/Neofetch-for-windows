@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="easywinfetch",
-    version="1.0.0",
+    version="1.0.1",
     packages=find_packages(),
     package_data={
         "easywinfetch": ["config.yml"],
@@ -14,7 +14,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'easywinfetch=neofetch_win:display_info',
+            'easywinfetch=easywinfetch.neofetch_win:display_info',
         ],
     },
     author="Mkeko",
